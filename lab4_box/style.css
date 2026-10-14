@@ -1,0 +1,304 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@0,300;0,700;1,300&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    line-height: 1;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    color: #5a5a5a;
+}
+
+#container {
+    width: 980px;
+    margin: 0 auto;
+    box-shadow: 0 0 1em #cccccc;
+}
+
+/* Header */
+header {
+    padding: 20px;
+}
+
+header h1 {
+    margin: 20px 10px;
+    color: #b5b5b5;
+}
+
+/* Navigasi */
+nav {
+    display: block;
+    background-color: #1f5faa;
+}
+
+nav a {
+    padding: 15px 30px;
+    display: inline-block;
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #2b83ea;
+}
+
+/* Hero Panel */
+#hero {
+    background-color: #e4e4e5;
+    padding: 50px 20px;
+    margin-bottom: 20px;
+}
+
+#hero h1 {
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+
+#hero p {
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+/* Tombol (Button) */
+.btn {
+    padding: 10px;
+    background: #0b8ecd;
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.btn-large {
+    padding: 15px 30px;
+    font-size: 18px;
+}
+
+/* Mengatur Layout Main Content dan Sidebar */
+#wrapper {
+    margin: 0;
+}
+
+/* main content */
+#main {
+    float: left;
+    width: 640px;
+    padding: 20px;
+}
+
+/* sidebar area */
+#sidebar {
+    float: left;
+    width: 260px;
+    padding: 20px;
+}
+
+/* Widget Sidebar */
+.widget-box {
+    border: 1px solid #eee;
+    margin-bottom: 20px;
+}
+
+.widget-box .title {
+    padding: 10px 15px;
+    background-color: #042bca;
+    color: #fff;
+}
+
+.widget-box p {
+    padding: 15px;
+    line-height: 25px;
+}
+
+.widget-box ul {
+    list-style-type: none;
+}
+
+.widget-box li {
+    border-bottom: 1px solid #eee;
+}
+
+.widget-box li a {
+    padding: 10px 15px;
+    color: #333;
+    display: block;
+    text-decoration: none;
+}
+
+.widget-box li:hover a {
+    background-color: #eee;
+}
+
+/* Menambahkan Elemen Lain pada Main Content (Box) */
+.box {
+    display: inline-block; float: left; width: 33.33333333333333%;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.box h3 {
+    margin: 15px 0;
+}
+
+.box p {
+    line-height: 20px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.box img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.image-circle {
+    border-radius: 50%;
+}
+
+/* Clearfix dan Row */
+.row {
+    margin: 0 -10px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.row:after,
+.row:before,
+.entry:after,
+.entry:before {
+    content: " ";
+    display: table;
+}
+
+.row:after,
+.entry:after {
+    clear: both;
+}
+
+/* Content Artikel */
+.divider {
+    border: 0;
+    border-top: 1px solid #eeeeee;
+    margin: 40px 0;
+}
+
+.entry {
+    margin: 15px 0;
+}
+
+.entry h2 {
+    margin-bottom: 20px;
+}
+
+.entry p {
+    line-height: 25px;
+}
+
+.entry img {
+    border-radius: 5px;
+}
+
+/* Mengatur Posisi Gambar pada Artikel */
+.entry .left-img {
+    float: left;
+    margin-right: 15px;
+}
+
+.entry .right-img {
+    float: right;
+    margin-left: 15px;
+}
+
+/* Mengatur Footer */
+footer {
+    clear: both;
+    background-color: #1d1d1d;
+    padding: 20px;
+    color: #eee;
+}
+/* =========================================
+   TAMBAHAN CSS UNTUK MENU ABOUT & KONTAK
+========================================= */
+
+/* Single Layout (Tanpa Sidebar) */
+#single-main {
+    float: none; /* Mematikan float agar mengisi penuh kontainer */
+    width: 100%; /* Memenuhi seluruh lebar container */
+    box-sizing: border-box;
+    padding: 30px;
+}
+
+#single-main h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Form Kontak */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto; /* Membuat form berada di tengah */
+    background-color: #f9f9f9;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical; /* Hanya bisa diperbesar ke bawah */
+}
+
+/* Tombol Submit Form */
+.btn-submit {
+    background-color: #1f5faa;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: inherit;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0b8ecd; /* Efek hover menyala */
+}

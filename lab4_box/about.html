@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Layout Sederhana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <!-- HEADER -->
+        <header>
+            <h1>Layout Sederhana</h1>
+        </header>
+
+        <!-- NAVIGASI -->
+        <nav>
+            <a href="lab4_box.html" class="active">Home</a>
+            <a href="artikel.html">Artikel</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Kontak</a>
+        </nav>
+
+        <!-- WRAPPER -->
+        <section id="wrapper">
+            <!-- MENGGUNAKAN SINGLE LAYOUT (Tanpa Sidebar) -->
+            <section id="single-main">
+                <h2>Tentang Kami</h2>
+                <p style="line-height: 25px; margin-bottom: 20px;">
+                    Kami adalah tim pengembang web yang berdedikasi untuk menciptakan tampilan website yang menarik, responsif, dan mudah digunakan. Dengan pengalaman belajar melalui modul Praktikum Pemrograman Web di Universitas Pelita Bangsa, kami terus mengembangkan kemampuan di bidang HTML dan CSS.
+                </p>
+
+                <hr class="divider" />
+
+                <h2>Portofolio</h2>
+                <p style="margin-bottom: 20px;">Berikut adalah beberapa contoh proyek yang pernah kami kerjakan:</p>
+                
+                <!-- Memanfaatkan class row dan box yang sudah ada di CSS sebelumnya -->
+                <div class="row">
+                    <div class="box">
+                        <img src="https://dummyimage.com/120/4caf50/fff.png" alt="Proyek 1" class="image-circle">
+                        <h3>Proyek Web Desa</h3>
+                        <p>Pembuatan website sistem informasi untuk mempermudah pelayanan administrasi desa.</p>
+                    </div>
+                    <div class="box">
+                        <img src="https://dummyimage.com/120/ff9800/fff.png" alt="Proyek 2" class="image-circle">
+                        <h3>Sistem Kasir</h3>
+                        <p>Aplikasi berbasis web untuk manajemen stok barang dan pencatatan transaksi toko.</p>
+                    </div>
+                    <div class="box">
+                        <img src="https://dummyimage.com/120/9c27b0/fff.png" alt="Proyek 3" class="image-circle">
+                        <h3>Portofolio Pribadi</h3>
+                        <p>Desain layout halaman web statis untuk menampilkan profil dan karya desain grafis.</p>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- FOOTER -->
+        <footer>
+            <p>&copy; 2021 - Universitas Pelita Bangsa</p>
+        </footer>
+    </div>
+</body>
+</html>
